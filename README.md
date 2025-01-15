@@ -1,14 +1,13 @@
-# Jira-License Confluence-License attlassian-License
+# Jira-License Confluence-License atlassian-License
 
-## tested on all attlassian Products + Plugins + everything
+## tested on all atlassian Products + Plugins + everything
 
-basically you just need the agent file to genereate a license code <br><br>
+basically you just need the agent file to generate a license code <br><br>
 
 ### sample Docker file
 
 ```
 FROM atlassian/jira-software:latest
-USER root
 
 # Add agent file
 COPY atlassian-agent.jar /opt/atlassian/jira/
@@ -21,7 +20,6 @@ same thing works for confluence
 
 ```
 FROM atlassian/confluence
-USER root
 
 # Add agent to env
 COPY atlassian-agent.jar /opt/atlassian/confluence/
